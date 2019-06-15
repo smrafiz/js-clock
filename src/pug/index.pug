@@ -1,0 +1,24 @@
+include mixins/mixin
+
+doctype html
+html(lang="en")
+
+	//- Including the Head Tag.
+	include includes/head
+
+	//- Body Contents.
+	body
+		#main-content
+
+			main#primary
+				.clock-wrapper
+					.clock
+						img.hands.hour-hand(src="assets/images/hour_hand.png", alt="Clock Hand")
+						img.hands.minute-hand(src="assets/images/minute_hand.png", alt="Clock Hand")
+						img.hands.second-hand(src="assets/images/second_hand.png", alt="Clock Hand")
+
+			<!-- .main -->
+		<!-- #main-content -->
+
+		// Scripts.
+		script(src="assets/js/app.min.js")

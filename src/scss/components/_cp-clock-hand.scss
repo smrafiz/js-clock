@@ -1,0 +1,18 @@
+/**
+ * Components Key
+ *
+ */
+
+.hands {
+	@extend %pos-a;
+	transition: all 0.05s linear;
+	transition-timing-function: cubic-bezier(0, 0, 0.35, 2.04);
+
+	&::before {
+		content: "";
+		display: block;
+		width: 40px;
+		height: 40px;
+		background: #000;
+	}
+}

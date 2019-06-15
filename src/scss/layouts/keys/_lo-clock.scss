@@ -1,0 +1,48 @@
+/**
+ * Layout Keys
+ *
+ */
+
+.clock-wrapper {
+	@extend %pos-r;
+
+	&::before {
+		content: "";
+		@extend %pos-a;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		display: block;
+		width: 30px;
+		height: 30px;
+		background: #000;
+		@extend .circle;
+	}
+}
+
+.clock {
+	display: flex;
+	flex: 1;
+	min-height: calc(100vh - 4px);
+	align-items: center;
+	justify-content: center;
+
+	&::before {
+		@extend %pos-a;
+		content: "";
+		width: 400px;
+		height: 400px;
+		background: url(../images/clock_face.png) center/cover;
+	}
+
+	&::after {
+		@extend %pos-a;
+		content: "";
+		width: 500px;
+		height: 500px;
+		background: rgba(255, 255, 255, 0.85);
+		z-index: -1;
+		border-radius: 3px;
+		box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+	}
+}
