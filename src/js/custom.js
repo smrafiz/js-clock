@@ -15,6 +15,19 @@ function clock() {
 	secondHand.style.transform = 'rotate(' + secDegree + 'deg)';
 	minuteHand.style.transform = 'rotate(' + minDegree + 'deg)';
 	hourHand.style.transform = 'rotate(' + hourDegree + 'deg)';
+
+	toggleAnimation(secDegree, secondHand, 354, 6);
+	toggleAnimation(minDegree, minuteHand, 354, 6);
+	toggleAnimation(hourDegree, hourHand, 330, 30);
+}
+
+// Preventing hand jump.
+function toggleAnimation(input, output, max, min) {
+	if (input > Number(max) || input < Number(min)) {
+		output.classList.remove('transition');
+	} else if (!output.classList.contains('transition')) {
+		output.classList.add('transition');
+	}
 }
 
 setInterval(clock, 1000);

@@ -124,8 +124,8 @@ button:hover,input[type="submit"]:hover,input[type="button"]:hover,.border-secon
 td,th,pre,textarea,select,input[type="text"],input[type="url"],input[type="number"],input[type="email"],input[type="button"],input[type="reset"],input[type="password"],input[type="search"],input[type="tel"],.border-default{border-color:#ddd}
 .border-offset{border-color:#f6f6f6}
 .border-black{border-color:#000}
-.hands{-webkit-transition:all .05s linear;-o-transition:all .05s linear;transition:all .05s linear;-webkit-transition-timing-function:cubic-bezier(0,0,0.35,2.04);-o-transition-timing-function:cubic-bezier(0,0,0.35,2.04);transition-timing-function:cubic-bezier(0,0,0.35,2.04)}
 .hands::before{content:"";display:block;width:40px;height:40px;background:#000}
+.hands.transition{-webkit-transition:all .05s linear;-o-transition:all .05s linear;transition:all .05s linear;-webkit-transition-timing-function:cubic-bezier(0,0,0.35,2.04);-o-transition-timing-function:cubic-bezier(0,0,0.35,2.04);transition-timing-function:cubic-bezier(0,0,0.35,2.04)}
 .clock-wrapper::before{content:"";left:50%;top:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);display:block;width:30px;height:30px;background:#000}
 .clock{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;min-height:calc(100vh - 4px);-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}
 .clock::before{content:"";width:400px;height:400px;background:url(../images/clock_face.png) center/cover}
